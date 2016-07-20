@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting Room Planner", "Meeting Room Planner\Meeting Room Planner.csproj", "{04173E2A-26B9-4426-835D-D137DF757EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meeting Room Schedule", "Meeting Room Schedule\Meeting Room Schedule.csproj", "{E2C1B39F-61E9-4892-BC9F-029790B8DA3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsData", "EventsData\EventsData.csproj", "{E16D6CA1-CA2C-4128-BC03-FDF9E4923868}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04173E2A-26B9-4426-835D-D137DF757EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04173E2A-26B9-4426-835D-D137DF757EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04173E2A-26B9-4426-835D-D137DF757EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04173E2A-26B9-4426-835D-D137DF757EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C1B39F-61E9-4892-BC9F-029790B8DA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C1B39F-61E9-4892-BC9F-029790B8DA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C1B39F-61E9-4892-BC9F-029790B8DA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C1B39F-61E9-4892-BC9F-029790B8DA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16D6CA1-CA2C-4128-BC03-FDF9E4923868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16D6CA1-CA2C-4128-BC03-FDF9E4923868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16D6CA1-CA2C-4128-BC03-FDF9E4923868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16D6CA1-CA2C-4128-BC03-FDF9E4923868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

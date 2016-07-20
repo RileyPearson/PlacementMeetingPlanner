@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Events" Class="EventsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=RILEY\SQL;Initial Catalog=Events;Integrated Security=True" SettingsObjectName="EventsData.Properties.Settings" SettingsPropertyName="EventsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EventTable2" Member="EventTable2s">
+    <Type Name="EventTable2">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="EventName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EventStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EventEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EventOrganiser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EventParticipants" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EventRoomNumber" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

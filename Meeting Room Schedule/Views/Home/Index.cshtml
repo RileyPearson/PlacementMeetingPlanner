@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model Meeting_Room_Schedule.Models.WorkingDay
+
+@{ 
+    var availabilityStatus = Model.IsAvailable ? "Free" : "Booked";
+    var availabilityStyle = "";
+    if (Model.IsAvailable)
+    {
+        availabilityStyle = "background-color:lime; color:black; text-align:center;";
+    }
+    else
+    {
+        availabilityStyle = "background-color:red; color:black; text-align:center;";
+    }
+}
+
+<div style="background-color:azure; color:black; text-align:center;">
+    <p><u><b><font size="8">@Model.CurrentDate<br>@Model.CurrentTime</font></b></u></p>
+</div>
+<div style="@availabilityStyle">
+    <p><font size="6">Meeting Room Currently 
+        @if (Model.IsAvailable) {
+            <span>Free</span>
+        } else {
+            <span>Booked</span>
+        }</font></p>
+</div>
+<div style="background-color:azure; color:black;">
+    <table width="100%">
+        @foreach (var daySlot in Model.Slots)
+        {
+            var slotStyle = "border-bottom: 2px dotted";
+            if (daySlot.IsBooked)
+            {
+                slotStyle = "background-color:lightgreen";
+            }
+            if (DateTime.Now <= daySlot.End && DateTime.Now >= daySlot.Start)
+            {
+                slotStyle = "background-color:green";
+            }
+        <tr style="@slotStyle">
+                <td>@daySlot.Start.ToString("HH:mm")</td>
+@if (daySlot.IsBooked)
+{
+    <td>@daySlot.BookedBy - @daySlot.MeetingName @daySlot.MeetingStartAndEndDesc</td>
+}
+else
+{
+    <td></td>
+}
+        </tr>
+        }
+    </table>
+</div>
